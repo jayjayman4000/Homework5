@@ -44,10 +44,11 @@
     justify-content: space-evenly;
 }
 
-.downloadbutton{
+.container .downloadbutton{
     position: absolute;
   top: 800px;
-  left: 10;
+  left: 10px;
+  box-shadow: 10px 10px 5px lightblue;
   background-color: pink;
   
 }
@@ -162,11 +163,12 @@
     justify-content: space-evenly;
 }
 
-.downloadbutton{
+.container .downloadbutton{
     position: absolute;
   top: 800px;
-  left: 10;
+  left: 10px;
   background-color: pink;
+  box-shadow: 10px 10px 5px lightblue;
   
 }
 

@@ -1,226 +1,268 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
 
-<head>
-<title>
-Title
-</title>
-<link rel="stylesheet" href="./style.css"/>
-</head>
+<!-- header -->
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> 
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> 
+            <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+                <use xlink:href="#bootstrap">
 
-<body>
-    <!-- Loading Screen -->
-    <div class="spinner">
-        <svg viewBox="0 0 100 100">
-            <circle cx = "50" cy = "50" r = "20" />
-        </svg>
-    </div>
-
-    <!-- Containers -->
-    <div class="container">
-        <div class="header">
-            <h1>Jeremiah J Allen</h1>
-        </div>
-        <div class="menu">
-            <div class="nb-education">
-                <button onclick="window.location.href='#education1'">
+                </use>
+            </svg> 
+            <span class="fs-4">
+                Jeremiah J Allen
+            </span> 
+        </a> 
+        <ul class="nav nav-pills"> 
+            <li class="nav-item">
+                <a href="tel:+1(480)417-9494" class="nav-link active" aria-current="page">
+                    Contact
+                </a>
+            </li> 
+            <li class="nav-item">
+                <a href="#education1" class="nav-link">
                     Education
-                </button>
-            </div>
-            <div class="nb-skills">
-                <button onclick="window.location.href='#skills1'">
+                </a>
+            </li> 
+            <li class="nav-item">
+                <a href="#projects1" class="nav-link">
                     Skills
-                </button>
-            </div>
-            <div class="nb-projects">
-                <button onclick="window.location.href='#projects1'">
+                </a>
+            </li> 
+            <li class="nav-item">
+                <a href="#projects1" class="nav-link">
                     Projects
-                </button>
-            </div>
-            <div class="nb-contact">
-                <button onclick="window.location.href='#contact1'">
-                    Contact Info
-                </button>
-            </div>
-            <div class="nb-summary">
-                <button onclick="window.location.href='#summary1'">
-                    About Me
-                </button>
-            </div>
-            <div class="nb-video">
-                <button onclick="window.location.href='#video1'">
-                    About Me Video
-                </button>
-            </div>
-        </div>
-        <div class="content">
-            <div class="summary-content" id="summary1">
-                <div class="profile-picture">
-                    <img
-                    type="image/jpeg"
-                    src="./pp1.jpg"
-                    width="100%"
-                    height="100%" />
-                </div>
-                <div class="summary-title">
-                    <h2>Web Developer</h2>
-                </div>
-                <div class="summary-text">
-                    <p>I am Jeremiah Allen, I'm 20 years old and was adopted at 9 years old. Since I was adopted my passion for computers and everything about them has only grown and here I am. My main intrests are in web devleopment and also militatry technoligies mostly Augmented Reality based!</p>
-                </div>
-                <div class="about-me-video" id="video1">
-                    <video controls width="100%" height="100%">
-                    <source src="./resume.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-            </hr>
-            <div class="skills-content" id="skills1">
-                <h2>Skills</h2>
-                    <div class="skills">
-                        <div class="skill1">
-                            <strong>Web Development</strong> 
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                </ul>
-                        </div>
-                        <div class="skill2">
-                            <strong>Programming Languages</strong>
-                                <ul>
-                                    <li>Python</li>
-                                    <li>C</li>
-                                </ul>
-                        </div>
-                        <div class="skill3">
-                            <strong>Version Control</strong>
-                                <ul>
-                                    <li>Git</li>
-                                    <li>GitHub</li>
-                                </ul>
-                        </div>
-                    </div>
-            </div>
-            <hr />
-            <div class="projects" id="projects1">
-                <h2>Project Showcas (hover image)</h2>
-                    <div class="content-projects">
-                        <div class="img">
-                            <img
-                                type="image/jpeg"
-                                src="./ai.png"
-                                width="412px"
-                                height="268" 
-                            /> 
-                        </div>
-                        <div class="img2">
-                            <img
-                                type="image/jpeg"
-                                src="./blackscholes.png"
-                                width="412px"
-                                height="268"
-                            />  
-                        </div>
-                        <div class = "project-content">
-                            <div class="project-title">
-                                <h3>Local Machine AI</h3>
-                            </div>
-                            <div class="project-about">
-                                <p>downloaded and installed an AI called ollama and turned it into a virtual voice agant using pyhton! Called it EVA.</p>
-                            </div>
-                        </div>
-                        <div class = "project2-content">
-                            <div class="project-title2">
-                                <h2>Black Scholes Calculator</h2>
-                            </div>
-                            <div class="project-about2">
-                                <p>Made a Calculator that determines based off market price and other variables to tell you when to buy and sell.</p>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <hr />
-            
-            <div class="education" id="education1">
-                <h2>Education</h2>
-                <p >My education started with covid lockdown. I learned how to build a pc. I then spent the next year saving my money to build one XD. </p>
+                </a>
+            </li> 
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Video
+                </a>
+            </li> 
+        </ul> 
+    </header>
+<!-- end header -->
+<!-- nav bar -->
+<!-- included in header -->
+<!-- end navbar -->
 
-                <table bgcolor=#1F4529>
-                <tr bgcolor=#E8ECD7 align="center">
-                    <th width="100">Work Place</th>
-                    <th width="100">Postition</th>
-                    <th width="100">Duration</th>
-                </tr>
-                <tr bgcolor=#E8ECD7 align="center">
-                    <td width="100">NAU</td>
-                    <td width="100">Student(Software)</td>
-                    <td width="100">2025-Current</td>
-                </tr>
-                <tr bgcolor=#E8ECD7 align="center">
-                    <td width="100">NAU</td>
-                    <td width="100">Student(Computer)</td>
-                    <td width="100">2024-2025</td>
-                </tr>
-                </table>
-            </div>
-            </hr>
-        </div>
-        <div class="footer">
-            <h2>Contact Info</h2>
-            <p>
-            Phone : <a href="tel:+1(480)417-9494"><mark>480-417-9494</mark></a> Prefered <br />
-            Email : <a href="Mailto:jeremiahallenfinancial@gmail.com">jeremiahallenfinancial@gmail.com </a><br />
-            GitHub: <a target="_blank" href="https://github.com/jayjayman4000">jayjayman4000</a>
-            </p>
-        </div>
-        <div class="menuButton">
-            <button>
-                Menu
-            </button>
-                <div class="dropdownContent">
-                    <div class="education"> 
-                        <button href="#">
-                        Education
-                        </button>
-                    </div>
-                    <div class="skills-nav">
-                        <button href="#">
-                        Skills
-                        </button>
-                    </div>
-                    <div class="projects-nav">
-                        <button href="#">
-                        Projects
-                        </button>
-                    </div>
-                    <div class="contact">
-                        <button href="#">
-                        Contact Info
-                        </button>
-                    </div>
-                    <div class="summary">
-                        <button href="#">
-                        Summary
-                        </button>
-                    </div>
-                    <div class="video">
-                        <button href="#">
-                        About Me Video
-                        </button>
-                    </div>
-                
-                </div>
 
-        </div>
-        <div class="downloadbutton">
-            <button>
-            <p>Download Resume</p>
-            </button>
-        </div>
+
+
+
+
+
+
+
+
+<!-- main content -->
+    <!-- hero -->
+    <div class="container col-xxl-8 px-4 py-5"> 
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5"> 
+            <div class="col-10 col-sm-8 col-lg-6"> 
+                <img src="./pp1.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> 
+            </div> 
+            <div class="col-lg-6"> 
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                    Web Developer
+                </h1> 
+                    <p class="lead">
+                        I am Jeremiah Allen, I'm 20 years old and was adopted at 9 years old.
+                         Since I was adopted my passion for computers and everything about them
+                          has only grown and here I am. My main intrests are in web devleopment 
+                          and also militatry technoligies mostly Augmented Reality based!
+                    </p> 
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start"> 
+                    <a href="tel:+1(480)417-9494" class="btn btn-primary btn-lg px-4 me-md-2" role="button">
+                        Phone
+                    </a>
+                    <a href="mailto:jeremiahallenfinancial@gmail.com" class="btn btn-outline-secondary btn-lg px-4" role="button">
+                        Email
+                    </a> 
+                </div> 
+            </div> 
+        </div> 
     </div>
+    <!-- end hero -->
+    <!-- start skills -->
+     
+<h2>Projects and Skills</h2>
+    <!-- end skills -->
+    <!-- start projects -->
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5" id="projects1" > 
+            <div class="col"> 
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./ai.png');"> 
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                         <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                            Cross Platform, AI Assistant
+                        </h3> <ul class="d-flex list-unstyled mt-auto">
+                             <li class="me-auto"> 
+                                
+                             </li> 
+                             <li class="d-flex align-items-center me-3">
+                                <small>
+                                    Python
+                                </small>
+                             </li> 
+                             <li class="d-flex align-items-center">
+                                <small>
+                                    3 Weeks
+                                </small>
+                             </li> 
+                            </ul> 
+                        </div>
+                     </div>
+                     </div> 
+                     <div class="col">
+                         <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./blackscholes.png');"> 
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
+                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                                    Black Scholes Calculator
+                                </h3> 
+                                <ul class="d-flex list-unstyled mt-auto"> 
+                                    <li class="me-auto"> 
+                                        
+                                    </li>
+                                     <li class="d-flex align-items-center me-3"> 
+                                        <small>
+                                            C
+                                        </small> 
+                                    </li> 
+                                    <li class="d-flex align-items-center">
+                                        <small>
+                                            1 Day
+                                        </small>
+                                     </li> 
+                                    </ul> 
+                                </div>
+                             </div>
+                             </div>
+                              <div class="col">
+                                 <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./pp1.jpg');"> 
+                                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1"> 
+                                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                                            Resume Website
+                                        </h3> 
+                                        <ul class="d-flex list-unstyled mt-auto">
+                                             <li class="me-auto"> 
+                                                
+                                            </li> 
+                                            <li class="d-flex align-items-center me-3">
+                                                <small>
+                                                    HTML, CSS, JS
+                                                </small> 
+                                            </li> 
+                                            <li class="d-flex align-items-center"> 
+                                                <small>
+                                                    6 Weeks
+                                                </small>
+                                             </li>
+                                             </ul>
+                                             </div> 
+                                            </div> 
+                                        </div> 
+                                    </div>
+    <!-- end projects -->
+    <!-- education -->
+    <h2>Education</h2>
+    <div id="education1"></div>
+            <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">Work Place</th>
+            <th scope="col">Postition</th>
+            <th scope="col">Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>NAU</td>
+            <td>Student(Software)</td>
+            <td>2025-Current</td>
+            
+            </tr>
+            <tr>
+            <td>NAU</td>
+            <td>Student(Computer)</td>
+            <td>2024-2025</td>
+            
+            </tr>
+           
+        </tbody>
+        </table>
+    <!-- end education -->
+    <!-- download button -->
+        <div class="downloadbutton">
+            <div class="d-flex gap-2 justify-content-center py-5"> 
+                <button id="downloadPdfBtn" class="btn btn-primary d-inline-flex align-items-center" type="button">
+                    Download Resume
+                        <!-- <svg class="bi ms-1" width="20" height="20" aria-hidden="true">
+                            <use xlink:href="#arrow-right-short">
 
-    <script src="./script.js"></script>
-</body>
+                            </use> -->
+                        </svg> 
+                    </button> 
+            </div>
+        </div>
+    <!-- end download button -->
 
+
+
+    <!-- footer -->
+     <div class="container"> 
+        <footer class="py-3 my-4"> 
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3"> 
+                <p class="text-center text-body-secondary">
+                Contact Info
+            </p> 
+            
+             </ul> 
+             <ul class="nav justify-content-center  pb-3 mb-3">
+             <li class="nav-item">
+                    <a href="tel:+1(480)417-9494" class="nav-link px-2 text-body-secondary">
+                        Phone: +1 (480) 417-9494
+                    </a>
+                </li> 
+                <li class="nav-item">
+                    <a href="Mailto:jeremiahallenfinancial@gmail.com" class="nav-link px-2 text-body-secondary">
+                        Email: jeremiahallenfinancial@gmail.com
+                    </a>
+                </li> 
+                <li class="nav-item">
+                    <a target="_blank" href="https://github.com/jayjayman4000" class="nav-link px-2 text-body-secondary">
+                        GitHub: jayjayman4000
+                    </a>
+                </li>
+            </ul>
+        </footer> 
+    </div>
+    <!-- end footer -->
+   
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC9QfWfR96jYf0xR8M4gT5sP4Q5dm42Hcps225y7sY9qsK0kGugHgdGXN53BJ38qRAjPR9U1F4A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        const downloadPdfBtn = document.getElementById('downloadPdfBtn');
+
+        downloadPdfBtn.addEventListener('click', () => {
+            const options = {
+                margin: 0.5,
+                filename: 'Jeremiah-Allen-Resume.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+
+            html2pdf().set(options).from(document.body).save();
+        });
+    </script>
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" class="astro-vvvwv3sm"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+  </body>
 </html>
